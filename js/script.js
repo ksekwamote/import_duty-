@@ -5,12 +5,24 @@ function custom() {
 					var pcSelect = document.getElementById("category")
 					var product = pcSelect.options[pcSelect.selectedIndex].value
 					var price = document.getElementById("price").value
-
-
-
+               var sign;
+               
+               var currency=  document.querySelector('input[name="currency"]:checked').value;
+                
+           
+               
                if((validate(price, product, country) == -1)){
 
                   return;
+               }
+
+               if(currency == "ZAR"){
+
+                  sign='R'
+               }
+
+               else{
+                  sign='$'
                }
 
 
@@ -91,17 +103,17 @@ function custom() {
 
                      document.getElementById("res").innerHTML =`<div class="negative">
                 <div class="callout">
-                    😢 Oh no, looks like you’ll have to pay $<strong class="result-costs">`+tax.toFixed(2)+`</strong>
+                    😢 Oh no, looks like you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>
 
                 <div class="explanation">
-                    Additionally, you'll be charged a duty fee of $
+                    Additionally, you'll be charged a duty fee of `+sign+`
                     <strong class="result-duty">`+import_duty.toFixed(2)+`</strong> 
                 </div>
 
                 <div class="details">
-                    Which brings your total to $
+                    Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
             </div>`
@@ -111,17 +123,17 @@ function custom() {
 
                      document.getElementById("res").innerHTML =`<div class="negative">
                 <div class="callout">
-                    &#128521  Not too bad, you’ll have to pay $<strong class="result-costs">`+tax.toFixed(2)+`</strong>
+                    &#128521  Not too bad, you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>
 
                 <div class="explanation">
-                    Additionally, you'll be charged a duty fee of $
+                    Additionally, you'll be charged a duty fee of `+sign+`
                     <strong class="result-duty">`+import_duty.toFixed(2)+`</strong> 
                 </div>
 
                 <div class="details">
-                    Which brings your total to $
+                    Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
             </div>`
@@ -132,17 +144,17 @@ function custom() {
 
                   document.getElementById("res").innerHTML =`<div class="negative">
                 <div class="callout">
-                    &#128542  Yikes! , you’ll have to pay $<strong class="result-costs">`+tax.toFixed(2)+`</strong>
+                    &#128542  Yikes! , you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>
 
                 <div class="explanation">
-                    Additionally, you'll be charged a duty fee of $
+                    Additionally, you'll be charged a duty fee of `+sign+`
                     <strong class="result-duty">`+import_duty.toFixed(2)+`</strong> 
                 </div>
 
                 <div class="details">
-                    Which brings your total to $
+                    Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
             </div>`

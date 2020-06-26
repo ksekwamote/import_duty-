@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Duties - Swiss Customs Calculator for Online Shoppers</title>
+    <title>SA Import Duties</title>
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -35,8 +35,8 @@
 
     <header>
         <a href="https://duties.ch/">
-            <h1>Duties</h1>
-            <div class="tagline">swiss online import costs</div>
+            <div id="testbutton" ></div>
+           <br>
         </a>
     </header>
 
@@ -58,17 +58,17 @@
             <form>
                 <label>
                     <span class="label-text">Price</span>
-                    <input type="number" step="0.05" min="0" name="price">
+                    <input type="number" step="0.05" min="0" id="price">
                 </label>
 
                  <label>
                  		<span class="label-text">Category</span>
 						      <select id="category">
-						          <option selected> &nbsp;  Select the Product Category </option>
-						          <option value="Accesories (no battery)"> &nbsp; Accesories (no battery)</option>
-						          <option value="Accesories (with battery)">&nbsp; Accesories (with battery)</option>
-						          <option value="Audio/Video">&nbsp; Audio/Video</option>
-						          <option value="Bags & Luggage"> &nbsp; Bags & Luggage</option>
+						          <option value="-1" selected>  Select the Product Category </option>
+						          <option value="Accesories (no battery)"> Accesories (no battery)</option>
+						          <option value="Accesories (with battery)"> Accesories (with battery)</option>
+						          <option value="Audio/Video"> Audio/Video</option>
+						          <option value="Bags & Luggage">  Bags & Luggage</option>
 						          >
 						      </select>
 					</label>
@@ -76,110 +76,76 @@
                 <label>
                 		<span class="label-text">Country</span>
                     <select id="country">
-						          <option selected> &nbsp;  Select your country </option>
-						          <option value ="Angola"> &nbsp; Angola</option>
-						          <option value ="Botswana">&nbsp; Botswana</option>
-						          <option value ="Lesotho">&nbsp; Lesotho</option>
-						          <option value ="Namibia"> &nbsp; Namibia</option>
-						          <option value="South Africa"> &nbsp; South Africa</option>
-						          <option value="Eswathini"> &nbsp;Eswathini</option>
-						          <option value="Zambia">&nbsp; Zambia</option>
-						          <option value="Zimbabwe">&nbsp; Zimbabwe</option>
-						          <option value="England">&nbsp; England</option>
-						          <option value="Italy">&nbsp; Italy</option>
-						          <option value="France"> &nbsp; France</option>
-						          <option value="Belgium"> &nbsp; Belgium</option>
-						          <option value="Germany"> &nbsp; Germany</option>
+						          <option value="-1" selected>  Select your country </option>
+						          <option value ="Angola">  Angola</option>
+						          <option value ="Botswana"> Botswana</option>
+						          <option value ="Lesotho"> Lesotho</option>
+						          <option value ="Namibia">  Namibia</option>
+						          <option value="South Africa">  South Africa</option>
+						          <option value="Eswathini"> Eswathini</option>
+						          <option value="Zambia"> Zambia</option>
+						          <option value="Zimbabwe"> Zimbabwe</option>
+						          <option value="England"> England</option>
+						          <option value="Italy">Italy</option>
+						          <option value="France">  France</option>
+						          <option value="Belgium">  Belgium</option>
+						          <option value="Germany">  Germany</option>
 						      </select>
                 </label>
 
                 
 
 
-                <label>
-                    <span class="label-text">Shipping</span>
-                    <input type="number" step="0.05" min="0" name="shipping">
-                </label>
-                <label>
-                    <span class="label-text">Courier</span>
-                    <select name="courier">
-                        <option value="dhl">DHL</option>
-                        <option value="post" selected>Post</option>
-                    </select>
-                </label>
-                <label data-show-if="courier=post">
-                    <span class="label-text">Country</span>
-                    <select name="country">
-                        <option value="any" selected>Any</option>
-                        <option value="austria">Austria</option>
-                        <option value="france">France</option>
-                        <option value="germany">Germany</option>
-                        <option value="italy">Italy</option>
-                    </select>
-                </label>
-                <label data-show-if="courier=dhl">
-                    <span class="label-text">Weight</span>
-                    <select name="weight">
-                        <option value="normal" selected>&lt; 1'000kg</option>
-                        <option value="heavy">&gt; 1'000kg</option>
-                    </select>
-                </label>
-                <label>
-                    <span class="label-text">Product</span>
-                    <select name="product">
-                        <option value="any" selected>Any</option>
-                        <option value="books">Books</option>
-                        <option value="food">Food</option>
-                        <option value="magazines">Magazines</option>
-                        <option value="pharma">Pharmaceuticals</option>
-                    </select>
-                </label>
+
+              
+              
             </form>
         </section>
 
         <section id="result">
             <h2>Result</h2>
+            <div id="res" style="color:white;">
+            	
 
-            <div class="positive">
+
+           
+
+            <div class="positive" >
                 <div class="callout">
-                    🥳 Yay, looks like you do <strong>not</strong> have to pay import taxes!
+                    🥳 Hi there! Are you ready to calculate some import costs 
                 </div>
 
                 <div class="explanation">
-                    Your <span class="result-taxrate">8</span>% VAT is
-                    <strong class="result-vat">0.00</strong> which is below the
-                    5.00 limit.
+                    Fill Out the details  <span class="result-taxrate"></span> and 
+                    <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
             </div>
 
-            <div class="negative" style="display: none;">
-                <div class="callout">
-                    😢 Oh no, looks like you’ll have to pay <strong class="result-costs">0.00</strong>
-                    in taxes!
-                </div>
+			 </div>
+            <br>
+            <div align="center">
+            	<a href="#" class="btn btn-white btn-animation-1" onclick="custom()">CALCULATE</a> 
 
-                <div class="explanation">
-                    Your <span class="result-taxrate">8</span>% VAT is
-                    <strong class="result-vat">0.00</strong>.
-                </div>
 
-                <div class="details">
-                    Additionally, you'll be charged a duty fee of
-                    <strong class="result-duty">0.00</strong> due to the VAT
-                    amount being above 5.00.
-                </div>
             </div>
+            
         </section>
+
+        <div class="box">
+  
+</div>
+
     </main>
 
     <footer>
-        Found an error? Then <a href="https://github.com/href/duties/issues">please let me know</a>.
+      Kutlo Sekwamote (c)
     </footer>
 
     <!-- lazily loaded -->
     <div data-if-fragment="tests" data-src="js/tests.js"></div>
 
     <!-- eagerly loaded -->
+    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/math.js"></script>
     <script type="text/javascript" src="js/ui.js"></script>

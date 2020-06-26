@@ -11,11 +11,13 @@ html {
 }
 
 a {
-    color: rgba(255, 109, 109, 1.00);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 a:visited {
-    color: rgba(74, 74, 74, 1.00);
+    color: white;
 }
 
 /*
@@ -54,13 +56,14 @@ footer {
 body {
     margin: 1rem auto;
     padding: 0 1.5rem 0 1.5rem;
+    background-color: #202530;
 }
 
 /*
     Header
 */
 header {
-    border-color: rgba(255, 109, 109, 1.00);
+    border-color: linear-gradient(80deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     border-style: solid;
     border-width: 0 0 1rem;
 
@@ -101,10 +104,12 @@ section h2 {
     margin: 0 0 .75rem;
 
     text-transform: uppercase;
+    color:rgba(86,201,169, 1.00);
 }
 
 section p {
-    max-width: 60ex;
+    max-width: 70ex;
+    color:rgba(226,245,240, 1.00);
 }
 
 /*
@@ -137,7 +142,8 @@ label {
 
     border-style: solid;
     border-width: 0 0 1px;
-    border-color: rgba(255, 109, 109, 1.00);
+    border-color: rgba(226,245,240, 1.00);
+    color:rgba(86,201,169, 1.00);
 }
 
 .label-text {
@@ -151,7 +157,7 @@ label {
 */
 input, select, option, .checkbox-pseudo {
     font-size: 1.5rem;
-    color: rgba(64, 64, 64, 1.00);
+    color: rgba(226,245,240, 0.85);
     cursor: pointer;
 }
 
@@ -174,8 +180,19 @@ input {
     max-width: 45%;
 }
 
+button{
+
+
+color: white;
+border-radius: 5px;
+background-color: #202530;
+border-color: rgba(41,117,96);
+font-size: 20px;
+outline: none ;
+}
+
 select, option {
-    background: none;
+    background: #202530;
     border: none;
     border-radius: 0;
     -webkit-appearance: none;
@@ -185,10 +202,11 @@ select, option {
     appearance: none;
     padding: 0;
     margin: 0;
+    color: rgba(226,245,240, 0.85);
 }
 
 select:focus {
-    background: rgba(255, 109, 109, 0.25);
+   
 }
 
 /*
@@ -258,7 +276,7 @@ footer {
 */
 @media (min-width: 740px) {
     body {
-        width: 740px;
+        width: 800px;
     }
 }
 
@@ -280,9 +298,148 @@ footer {
     #variables, #result {
         margin: 0 0 1.5rem;
         flex: 0 1 100%;
+        color:white;
     }
 
     header {
         padding: 0;
     }
+}
+
+ button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+#testbutton {
+  width: 300px;
+  height:50px;
+  border-radius:180px;
+  position:relative;
+  left:calc(50% - 75px);
+  top:calc(50% - 25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  cursor:pointer;
+  line-height:12px;
+}
+
+#testbutton:before {
+  content:'';
+  z-index:1;
+  position:absolute;
+  display:block;
+  width:80%;
+  height:70%;
+  top:15%;
+  left:10%;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(15px);
+  opacity:0;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+#testbutton:hover:before {
+  opacity:1;
+  transition: 0.3s opacity ease-in-out;
+  filter:blur(25px);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+}
+
+#testbutton:after {
+  content:'SA IMPORT DUTIES';
+  text-align:center;
+  line-height:40px;
+  font-size:18px;
+  color:rgba(235,235,235,1);
+  font-weight:bold;
+  z-index:5;
+  position:absolute;
+  display:block;
+  border-radius:180px;
+  width:92%;
+  height:80%;
+  top:10%;
+  left:4%;  
+  background-color:rgb(19, 20, 22);
+}
+
+
+
+.box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:10px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  color:white;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:10px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
 }

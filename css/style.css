@@ -110,7 +110,7 @@ section h2 {
 section p {
     max-width: 70ex;
     color:rgba(226,245,240, 1.00);
-      
+
 }
 
 /*
@@ -332,7 +332,7 @@ footer {
 }
 
 #testbutton:before {
-  content:'';
+  content:url();
   z-index:1;
   position:absolute;
   display:block;
@@ -355,7 +355,7 @@ footer {
 }
 
 #testbutton:after {
-  content:  'SA IMPORT DUTIES' ;
+  content: url(./../img/msantsi.png) "     " " SA IMPORT DUTIES";
   text-align:center;
   line-height:40px;
   font-size:18px;
@@ -372,6 +372,7 @@ footer {
   background-color:rgb(19, 20, 22);
 
 }
+
 
 
 

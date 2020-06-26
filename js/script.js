@@ -3,13 +3,13 @@ function custom() {
 					var cSelect = document.getElementById("country")
 					var country = cSelect.options[cSelect.selectedIndex].value
 					var pcSelect = document.getElementById("category")
-					var product = pcSelect.options[pcSelect.selectedIndex].value
+					var product = Number(pcSelect.options[pcSelect.selectedIndex].value)
 					var price = document.getElementById("price").value
                var sign;
-               
+
                var currency=  document.querySelector('input[name="currency"]:checked').value;
                 
-           
+                  console.log(typeof product )
                
                if((validate(price, product, country) == -1)){
 
@@ -32,67 +32,256 @@ function custom() {
 
 
 
-					 var sadc_countries = ['Angola', 'Botswana', 'Congo', 'Lesotho', 'Namibia', 'South Africa',
-                      'Swaziland', 'Zambia', 'Zimbabwe']
+					 var sadc_countries = ['Angola', 'Botswana', 'Congo DRC', 'Lesotho', 'Malawi', 'Madagascar', 'Mauritius', 'Mozambique', 'Namibia',
+                      'Seychelles', 'South Africa', 'Swaziland', 'Tanzania', 'Zambia', 'Zimbabwe']
 
-                      var EU_countries = ['England', 'Italy', 'France', 'Belgium', 'Germany']
-                      var category;
-                     switch(product){
-                     	case "Accesories (no battery)":
-                     		category=1;
-                     		break;
-                     	case "Accesories (with battery)":
-                     		category=2;
-                     		break;
-                     	case "Audio/Video":
-                     		category=3;
-                     		break;
-                     	case "Bags & Luggage":
-                     		category=4;
-                     		break
-                     	default:
-                     		category=0;
-
-                     }
+                      var EU_countries = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece',
+                     'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia',
+                     'Spain', 'Sweden', 'United Kingdom']
+                     var EFTA_countries = ['Iceland', 'Liechtenstein', 'Norway', 'Switzerland']
+                     var MERCOSUR_countries = ['Argentina', 'Brazil', 'Paraguay', 'Uruguay']
                      var duty;
-                     if (sadc_countries.includes(country)){
-                     	switch(category){
-                     		case 1:
-                     			duty=0.1
-                     			break;
-                     		case 2:
-                     			duty=0.15
-                     			break;
-                     		case 3:
-                     			duty=0
-                     			break;
-                     		case 4:
-                     			duty=0
-                     			break
-                     		default:
-                     			duty=0;
-                     	}
-                     }
-                    else{
+                     var region;
 
-                    	switch(category){
-                     		case 1:
-                     			duty=0.1
-                     			break;
-                     		case 2:
-                     			duty=0.15
-                     			break;
-                     		case 3:
-                     			duty=0
-                     			break;
-                     		case 4:
-                     			duty=0.2
-                     			break
-                     		default:
-                     			duty=0;
+
+                     if (sadc_countries.includes(country)){
+                     	     duty=0
+                             region="SADC"
                      	}
+                     
+                    else if (EU_countries.includes(country)) {
+
+                          region="EU"
+
+                    	      switch(product){
+                              case 1:
+                                    
+                              case 2:
+                                   
+                              case 4:
+                                   
+                              case 5:
+                                    
+                              case 6:
+                                   
+                              case 8:
+                                   
+                              case 10:
+                                    
+                              case 12:
+                                    
+                              case 13:
+                                   
+                              case 14:
+                                   
+                              case 15:
+                                    
+                              case 16:
+                                   
+                              case 19:
+                                    
+                              case 20:
+                                    
+                              case 21:
+                                    duty=0
+                                    break;
+                              case 3:
+                                    duty=0.2
+                                    break;
+                              case 18:
+                                    duty=0.2
+                                    break;
+                              case 7:
+                                    duty=0.03
+                                    break;
+                              case 9:
+                                    duty=0.27
+                                    break;
+                              case 11:
+                                    duty=0.18
+                                    break;
+                              case 17:
+                                    duty=0.05
+                                    break;
+
+
+                           }
 
                     }
+
+                    else if(EFTA_countries.includes(country)){
+                           region="EFTA"
+                           switch(product){
+                              case 2:
+                                   
+                              case 4:
+                                   
+                              case 5:
+                                   
+                              case 6:
+                                    
+                              case 8:
+                                   
+                              case 10:
+                                   
+                              case 12:
+                                   
+                              case 13:
+                                   
+                              case 14:
+                                    
+                              case 15:
+                                    
+                              case 16:
+                                   
+                              case 19:
+                                    
+                              case 20:
+                                    
+                              case 21:
+                                    duty=0
+                                    break;
+                              case 3:
+                                   
+                              case 18:
+                                    duty=0.2
+                                    break;
+                              case 1:
+                                    duty=0.15
+                                    break;
+                              case 7:
+                                    duty=0.03
+                                    break;
+                              case 11:
+                                    duty=0.15
+                                    break;
+                              case 17:
+                                    duty=0.05
+                                    break;
+
+                           }
+
+                    }
+
+                  else if(MERCOSUR_countries.includes(country)){
+                        region="MERCOSUR"
+                        switch(product){
+                              case 2:
+                                   
+                              case 4:
+                                   
+                              case 6:
+                                    
+                              case 8:
+                                   
+                              case 10:
+                                    
+                              case 12:
+                                    
+                              case 15:
+                                    
+                              case 16:
+                                    
+                              case 19:
+                                    
+                              case 20:
+                                    
+                              case 21:
+                                    duty=0
+                                    break
+                              case 1:
+                                    
+                              case 14:
+                                    duty=0.15
+                                    break
+                              case 3:
+                                   
+                              case 11:
+                                    
+                              case 18:
+                                    duty=0.3
+                                    break
+                              case 5:
+                                    
+                              case 13:
+                                    duty=0.2
+                                    break
+                              case 7:
+                                   
+                              case 17:
+                                    duty=0.05
+                                    break
+                              case 9:
+                                    duty=0.45
+                                    break
+                              case 11:
+                                    duty=0.3
+                                    break
+
+                        }
+
+                  }
+
+                  else{
+                     region="General"
+                     switch(product){
+                        case 1:
+                             
+                        case 14:
+                              duty=0.15
+                              break
+                        case 2:
+                              
+                        case 4:
+                             
+                        case 6:
+                              
+                        case 8:
+                              
+                        case 10:
+                              
+                        case 12:
+                              
+                        case 15:
+                              
+                        case 16:
+                              
+                        case 19:
+                              
+                        case 20:
+                              
+                        case 21:
+                              duty=0
+                              break
+                        case 3:
+                              
+                        case 11:
+                              
+                        case 18:
+                              duty=0.3
+                              break
+                        case 5:
+                              
+                        case 13:
+                              duty=0.2
+                              break
+                        case 7:
+                              
+                        case 17:
+                              duty=0.05
+                              break
+                        case 9:
+                              duty=0.45
+                              break
+                        case 14:
+                              duty=0.15
+                              break
+
+
+
+                     }
+
+                  }
 
                   var tax = 0.15*price
                   var import_duty = duty*price
@@ -116,6 +305,7 @@ function custom() {
                     Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
+                <div class="details">NOTE: The country you've selected is part of the <strong>`+region+` </strong>Trade Agreement.</div>
             </div>`
                  }
 
@@ -136,6 +326,7 @@ function custom() {
                     Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
+                 <div class="details">NOTE: The country you've selected is part of the <strong> `+region+`</strong> Trade Agreement.</div>
             </div>`
 
                  }
@@ -157,6 +348,7 @@ function custom() {
                     Which brings your total to `+sign+`
                     <strong class="result-duty">`+total+`</strong> 
                 </div>
+                 <div class="details">NOTE: The country you've selected is part of the <strong> `+region+` </strong> Trade Agreement.</div>
             </div>`
 
 
@@ -167,20 +359,20 @@ function custom() {
             
 
                   //document.getElementById("tax").innerHTML = "TAX: $"+tax.toFixed(2); 
-                  //document.getElementById("duty").innerHTML = "IMPORT DUTY: $"+import_duty.toFixed(2); 
-                  //document.getElementById("total").innerHTML = "TOTAL COST : $"+total;
+          }        //document.getElementById("duty").innerHTML = "IMPORT DUTY: $"+import_duty.toFixed(2); 
+          
+        //document.getElementById("total").innerHTML = "TOTAL COST : $"+total;
 
 
 
-                  //window.scrollBy(0, 400); 
-
-				}
+                  //window.scrollBy(0, 400);
+				
 
 				function validate(value , category, country){
 
 					
 
-            if (value == 0.00 && category != "-1" && country != "-1"){
+            if (value == 0.00 && category != -1 && country != "-1"){
 
                   document.getElementById("res").innerHTML =`<div class="positive">
                 <div class="callout">
@@ -197,7 +389,7 @@ function custom() {
                return -1
             }
 
-           if (value != 0.00 && category != "-1" && country == "-1" ){
+           if (value != 0.00 && category != -1 && country == "-1" ){
 
                   document.getElementById("res").innerHTML =`<div class="positive">
                 <div class="callout">
@@ -214,7 +406,7 @@ function custom() {
                return -1
        }
 
-      if (value != 0.00 && category == "-1" && country == "-1" ){
+      if (value != 0.00 && category == -1 && country == "-1" ){
 
                   document.getElementById("res").innerHTML =`<div class="positive">
                 <div class="callout">
@@ -232,7 +424,7 @@ function custom() {
        }
 
 
-       if (value == 0.00 && category == "-1" && country == "-1"){
+       if (value == 0.00 && category == -1 && country == "-1"){
 
                   document.getElementById("res").innerHTML =`<div class="positive">
                 <div class="callout">
@@ -272,7 +464,7 @@ function custom() {
 
 
 
-       if(category == "-1"){
+       if(category == -1){
 
 
          document.getElementById("res").innerHTML =`<div class="positive">

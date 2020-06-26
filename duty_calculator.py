@@ -5,10 +5,6 @@ Created on Sat Jun 20 18:10:14 2020
 @author: Kabelo
 """
 
-import pandas as pd
-
-countries = pd.read_csv('general1.csv')
-general = list(countries['Country'])
 
 country = input("Type your country: ")
 category = int(input("Type and enter the number corresponding to the category of your product:\n"+
@@ -126,7 +122,7 @@ def duty_calculator(country, category, price):
         if category == 21: duty = 0.
 
 
-    elif country in general:
+    else:
         print("\nRegion: General")
         if category == 1: duty = 0.15
         if category == 2: duty = 0.

@@ -374,12 +374,12 @@ function custom() {
 
             if (value == 0.00 && category != -1 && country != "-1"){
 
-                  document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+                  document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   🥳 WHOOO! 0 Costs mean 0 Taxes , or you made a mistake, Try again!
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
@@ -391,12 +391,12 @@ function custom() {
 
            if (value != 0.00 && category != -1 && country == "-1" ){
 
-                  document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+                  document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   &#128558 SORRY! Think you made a mistake! , you forgot to select country.  
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
@@ -408,12 +408,12 @@ function custom() {
 
       if (value != 0.00 && category == -1 && country == "-1" ){
 
-                  document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+                  document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   &#128562 SORRY! Think you made a mistake! , you forgot to select both country and category.  
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
@@ -426,12 +426,12 @@ function custom() {
 
        if (value == 0.00 && category == -1 && country == "-1"){
 
-                  document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+                  document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   &#128556 You barely touched anything
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
@@ -444,12 +444,12 @@ function custom() {
        if(country == "-1"){
 
 
-         document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+         document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   &#128558 SORRY! Think you made a mistake! , you forgot to select country.  
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>
@@ -467,12 +467,12 @@ function custom() {
        if(category == -1){
 
 
-         document.getElementById("res").innerHTML =`<div class="positive">
-                <div class="callout">
+         document.getElementById("res").innerHTML =`<div class="positive" style="color:rgba(15, 15, 15, 1.00);">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00);">
                   &#128556 OOOPS! Think you made a mistake! , you forgot to select category.  
                 </div>
 
-                <div class="explanation">
+                <div class="explanation" style="color:rgba(15, 15, 15, 1.00);">
                     Fill Out the details again <span class="result-taxrate"></span> and 
                     <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
                 </div>

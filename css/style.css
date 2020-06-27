@@ -11,13 +11,13 @@ html {
 }
 
 a {
-    color: white;
+    color: rgb(14, 12, 12);
     font-weight: bold;
     font-size: 18px;
 }
 
 a:visited {
-    color: white;
+    color: rgb(7, 7, 7);
 }
 
 /*
@@ -56,16 +56,17 @@ footer {
 body {
     margin: 1rem auto;
     padding: 0 1.5rem 0 1.5rem;
-    background-color: #202530;
+    background-color:  #ffffff;
 }
 
 /*
     Header
 */
 header {
-    border-color: linear-gradient(80deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-color: #25a2d3;
     border-style: solid;
-    border-width: 0 0 1rem;
+    border-radius: 3px;
+    border-width: 0 0 1.5rem;
 
     padding: 0 1.5rem 0 1.5rem;
 
@@ -104,24 +105,27 @@ section h2 {
     margin: 0 0 .75rem;
 
     text-transform: uppercase;
-    color:rgba(86,201,169, 1.00);
+    color:rgb(0, 0, 0);
 }
-
+/*
+    DISCLAIMER
+*/
 section p {
-    max-width: 70ex;
-    color:rgba(226,245,240, 1.00);
+    max-width: 130ex;
+    color:rgb(15, 15, 15);
 
 }
 
 /*
-    Result
+    RESULT
 */
 
 .callout {
-    background: rgba(240, 245, 245, .25);
-    border-radius: 2px;
+    background: rgba(164, 201, 201, 0.25);
+    border-radius: 5px;
 
-    font-size: 2rem;
+    font-size: 2.1rem;
+    color:rgb(15, 15, 15);
 
     margin: 0 0 1.25rem;
     padding: 1rem 1.5rem;
@@ -142,9 +146,10 @@ label {
     margin: 0 0 1rem;
 
     border-style: solid;
-    border-width: 0 0 1px;
-    border-color: rgba(226,245,240, 1.00);
-    color:rgba(86,201,169, 1.00);
+    border-width: 0 0 4px;
+    border-color: #25a2d3;
+    font-size: 1.5rem;
+    color:rgb(27, 29, 28);
 }
 
 .label-text {
@@ -158,7 +163,7 @@ label {
 */
 input, select, option, .checkbox-pseudo {
     font-size: 1.5rem;
-    color: rgba(226,245,240, 0.85);
+    color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
 }
 
@@ -184,18 +189,20 @@ input {
 button{
 
 
-color: white;
+color: rgb(133, 97, 97);
 border-radius: 5px;
-background-color: #202530;
+background-color: #006845;
 border-color: rgba(41,117,96);
-font-size: 20px;
+font-size: 10px;
 outline: none ;
 }
-
+/*
+    VARIABLE OPTIONS
+*/
 select, option {
-    background: #202530;
+    background: #61bbbb;
     border: none;
-    border-radius: 0;
+    border-radius: 5px;
     -webkit-appearance: none;
        -moz-appearance: none;
         -ms-appearance: none;
@@ -203,7 +210,7 @@ select, option {
     appearance: none;
     padding: 0;
     margin: 0;
-    color: rgba(226,245,240, 0.85);
+    color: rgba(4, 5, 5, 0.85);
 }
 
 select:focus {
@@ -226,11 +233,6 @@ input[type="number"]::-webkit-outer-spin-button {
 /*
     Checkboxes
 */
-input[type="radio"]:checked:after{
-  color:black;
-  background: red;
-
-}
 input[type="checkbox"] {
     opacity: 0;
     position: absolute;
@@ -270,7 +272,7 @@ footer {
 
     border-color: rgba(255, 109, 109, 1.00);
     border-style: solid;
-    border-width: 1px 0 0;
+    border-width: 2px 0 0;
 
     padding: .25rem 1.5rem .25rem 1.5rem;
 
@@ -282,7 +284,7 @@ footer {
 */
 @media (min-width: 740px) {
     body {
-        width: 800px;
+        width: 900px;
     }
 }
 
@@ -312,6 +314,7 @@ footer {
     }
 }
 
+/*
  button:hover {
   background: #03e9f4;
   color: #fff;
@@ -333,6 +336,7 @@ footer {
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   cursor:pointer;
   line-height:12px;
+  box-shadow:0px 0px 40px 20px  #060707;
 }
 
 #testbutton:before {
@@ -377,7 +381,7 @@ footer {
 
 }
 
-
+*/
 
 
 .box{
@@ -400,10 +404,13 @@ footer {
   display:inline-block;
   transition: all .5s;
 }
-
+/*
+    CALCULATE BUTTON
+*/
 .btn-white{
-  background:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  color:white;
+  background: #35bdc2;
+  font-size: 15px;
+  color:rgb(14, 12, 12);
 }
 
 .btn:hover{

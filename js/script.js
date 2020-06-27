@@ -1,10 +1,10 @@
 function custom() {
 
-					var cSelect = document.getElementById("country")
-					var country = cSelect.options[cSelect.selectedIndex].value
-					var pcSelect = document.getElementById("category")
-					var product = Number(pcSelect.options[pcSelect.selectedIndex].value)
-					var price = document.getElementById("price").value
+               var cSelect = document.getElementById("country")
+               var country = cSelect.options[cSelect.selectedIndex].value
+               var pcSelect = document.getElementById("category")
+               var product = Number(pcSelect.options[pcSelect.selectedIndex].value)
+               var price = document.getElementById("price").value
                var sign;
 
                var currency=  document.querySelector('input[name="currency"]:checked').value;
@@ -32,7 +32,7 @@ function custom() {
 
 
 
-					 var sadc_countries = ['Angola', 'Botswana', 'Congo DRC', 'Lesotho', 'Malawi', 'Madagascar', 'Mauritius', 'Mozambique', 'Namibia',
+                var sadc_countries = ['Angola', 'Botswana', 'Congo DRC', 'Lesotho', 'Malawi', 'Madagascar', 'Mauritius', 'Mozambique', 'Namibia',
                       'Seychelles', 'South Africa', 'Swaziland', 'Tanzania', 'Zambia', 'Zimbabwe']
 
                       var EU_countries = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece',
@@ -45,15 +45,15 @@ function custom() {
 
 
                      if (sadc_countries.includes(country)){
-                     	     duty=0
+                             duty=0
                              region="SADC"
-                     	}
+                        }
                      
                     else if (EU_countries.includes(country)) {
 
                           region="EU"
 
-                    	      switch(product){
+                           switch(product){
                               case 1:
                                     
                               case 2:
@@ -366,11 +366,11 @@ function custom() {
 
 
                   //window.scrollBy(0, 400);
-				
+            
 
-				function validate(value , category, country){
+            function validate(value , category, country){
 
-					
+               
 
             if (value == 0.00 && category != -1 && country != "-1"){
 
@@ -488,4 +488,4 @@ function custom() {
 
 
 
-				}
+            }

@@ -38,73 +38,46 @@
 <body>
 
     <header>
-        <a>
-
-            <div id="testbutton" ></div>
-
-           <br>
-
-           <div class="image"></div>
+        <a href="https://duties.ch/">
+            <h1>SA Duties</h1>
+            <div class="tagline">online import costs calculator</div>
         </a>
     </header>
 
-    <main>
-        <section id="disclaimer">
-            <h2>Disclaimer</h2>
-            <p>
-                Grown out of a personal script, this calculator tries to tell
-                you the amount of taxes you have to pay when you order
-                something online and import it to Switzerland. It is entirely
-                possible that this tool is wrong for many reasons, so there is
-                no guarantee that the shown price is actually what you'll pay.
-            </p>
-        </section>
-
+    <main>        
         <section id="variables">
             <h2>Variables</h2>
 
             <form>
 
-            		<div style="margin-left: 195px;">
-
-            				<label class="radio-inline" style="border-style: none; display: inline;" >
-            				<input type="radio" value="ZAR" name="currency" checked/>
-            				&nbsp; &nbsp;<img style="width:15px; height:15px; " src="./img/south.png"> &nbsp; ZAR
-            		</label>
-
-
-            		<label class="radio-inline" style=" border-style: none; display: inline;">
-            			<input type="radio" value="USD" name="currency"/>
-            			&nbsp; &nbsp;<img style="width:15px; height:15px; " src="./img/usa-today.png"> &nbsp; USD
-            		</label>
-            			
-
-            		</div>
+            	<div style="display: inline-flex; margin-left: 100px;">
             		
-            		
+            		<label class="radio-inline" style="border-style: none;" >
+            		<input type="radio" value="ZAR" name="currency" checked/>
+            			&nbsp; &nbsp;<img src="./img/south.png"> &nbsp; ZAR
+            	</label>
 
 
+            	<label class="radio-inline" style="margin-left:100px; border-style: none;">
+            		<input type="radio" value="USD" name="currency"/>
+            			&nbsp; &nbsp;<img src="./img/usa-today.png"> &nbsp; USD
+            	</label>
 
-
-            
-
+            	</div>
             	
 
 
 
-            	
-            			  <label>
-                    <span class="label-text">Price</span>
+
+                <label>
+                    <span class="label-text">Price:</span>
                     <input type="number" step="0.05" min="0" id="price">
                 </label>
 
-            	
-              
-
                  <label>
-                 		<span class="label-text">Category</span>
+                 		<span class="label-text">Category:</span>
 						      <select id="category">
-						          <option value=-1 selected>  Select the Product Category </option>
+						          <option value=-1 selected>  Select product category </option>
 						          <option value=1 > Arms and Ammunition</option>
 						          <option value=2 > Audio/Video</option>
 						          <option value=3 > Bags & Luggage</option>
@@ -117,7 +90,7 @@
 						          <option value=10> Gaming Consoles </option>
 						          <option value=11> Home Decor </option>
 						          <option value=12> Jewellery </option>
-						          <option value=13> Jewellery(Precious metals/pearls) </option>
+						          <option value=13> Jewellery (with precious metals/pearls) </option>
 						          <option value=14> Kitchen (Glassware) </option>
 						          <option value=15> Mobile Phones </option>
 						          <option value=16> Musical Instruments </option>
@@ -132,10 +105,10 @@
 					</label>
 
                 <label>
-                		<span class="label-text">Country</span>
+                		<span class="label-text">Importing from:</span>
                     <select id="country" name="country">
    <option value="-1">Select the Country</option>
-   <option value="Afganistan">Afghanistan</option>
+   <option value="Afghanistan">Afghanistan</option>
    <option value="Albania">Albania</option>
    <option value="Algeria">Algeria</option>
    <option value="American Samoa">American Samoa</option>
@@ -403,7 +376,9 @@
 
             <div class="positive" >
                 <div class="callout">
-                    🥳 Hi there! Are you ready to calculate some import costs 
+                <p style="text-align:justify;"> 
+                    🥳 Hi there! Are you ready to calculate some import costs??
+                </p>
                 </div>
 
                 <div class="explanation">
@@ -429,6 +404,20 @@
     </main>
 
     <footer>
+        <section id="disclaimer">
+            <h2>Disclaimer</h2>
+            <p style="text-align:justify;"> 
+                This simple calculator intends to help people estimate how much import taxes they can expect to pay
+                when ordering goods from abroad or when they return home with purchased goods from their 
+                international travels. It is entirely possible that this tool is wrong for many reasons, so there is
+                no guarantee that the shown price is actually what you'll pay. South Africa has different tariffs for
+                different countries depending on the bi-lateral Trade Agreements and this tool incorporates that to
+                estimate import duties. A certificate of origin is applicable for imported goods from countries that
+                have Trade Agreements with South Africa in order to benefit from lower import tariffs. Please visit
+                <a href="https://www.sars.gov.za/ClientSegments/Customs-Excise/Pages/default.aspx">SA Customs and Excise</a>
+                for more information.
+            </p>
+        </section>
       Kutlo Sekwamote (c)
     </footer>
 

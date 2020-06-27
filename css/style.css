@@ -12,10 +12,14 @@ html {
 
 a {
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: rgba(14, 12, 12 , 1.00);
 =======
     color: rgba(255, 109, 109, 1.00);
 >>>>>>> de108477fa8b26856e1b2bf3ac6a179240d02268
+=======
+    color: rgba(255, 109, 109, 1.00);
+>>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
     font-weight: bold;
     font-size: 18px;
 }
@@ -23,7 +27,11 @@ a {
     CALCULATE TEXT
 */
 a:visited {
+<<<<<<< HEAD
     color: rgba(7, 7, 7,1.00);
+=======
+    color: rgb(7, 7, 7);
+>>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
 }
 
 /*
@@ -131,7 +139,11 @@ section p {
     border-radius: 5px;
 
     font-size: 2.1rem;
+<<<<<<< HEAD
     color:rgba(15, 15, 15,1.00);
+=======
+    color:rgb(15, 15, 15);
+>>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
 
     margin: 0 0 1.25rem;
     padding: 1rem 1.5rem;

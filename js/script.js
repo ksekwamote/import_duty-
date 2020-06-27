@@ -290,15 +290,15 @@ function custom() {
 
                  if (tax > 500){
 
-                     document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00);>
-                <div class="callout" style="color:rgba(15, 15, 15, 1.00);>
+                     document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00)">
                     😢 Oh no, looks like you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>
 
                 <div class="explanation">
                     Additionally, you'll be charged a duty fee of `+sign+`
-                    <strong class="result-duty">`+import_duty.toFixed(2)+`</strong> 
+                    <strong class="result-duty">`+import_duty.toFixed(2)+`</strong>"
                 </div>
 
                 <div class="details">
@@ -311,8 +311,8 @@ function custom() {
 
                  else if (tax <50){
 
-                     document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00);>
-                <div class="callout" style="color:rgba(15, 15, 15, 1.00);>
+                     document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00)">
                     &#128521  Not too bad, you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>
@@ -333,8 +333,8 @@ function custom() {
 
                  else{  
 
-                  document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00);>
-                <div class="callout" style="color:rgba(15, 15, 15, 1.00);>
+                  document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
+                <div class="callout" style="color:rgba(15, 15, 15, 1.00)">
                     &#128542  Yikes! , you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
                     in taxes!
                 </div>

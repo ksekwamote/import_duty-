@@ -50,15 +50,15 @@
 
             <form>
 
-            	<div style="display: inline-flex; margin-left: 100px;">
+            	<div id="margin" >
             		
-            		<label class="radio-inline" style="border-style: none;" >
+            		<label class="radio-right" style="border-style: none;" >
             		<input type="radio" value="ZAR" name="currency" checked/>
             			&nbsp; &nbsp;<img id="icon" src="./img/south.png"> &nbsp; ZAR
             	</label>
 
 
-            	<label class="radio-inline" style="margin-left:100px; border-style: none;">
+            	<label class="radio-left" >
             		<input type="radio" value="USD" name="currency"/>
             			&nbsp; &nbsp;<img id="icon" src="./img/usa-today.png"> &nbsp; USD
             	</label>
@@ -422,6 +422,12 @@
 
     <!-- lazily loaded -->
     <div data-if-fragment="tests" data-src="js/tests.js"></div>
+
+    <!-- JQUERY -->
+    <script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
 
     <!-- eagerly loaded -->
     <script type="text/javascript" src="js/script.js"></script>

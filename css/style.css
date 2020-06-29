@@ -138,12 +138,10 @@ section p {
     background: rgba(164, 201, 201, 0.25);
     border-radius: 5px;
 
-    font-size: 2.1rem;
-<<<<<<< HEAD
+   
+
     color:rgba(15, 15, 15,1.00);
-=======
-    color:rgb(15, 15, 15);
->>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
+
 
     margin: 0 0 1.25rem;
     padding: 1rem 1.5rem;
@@ -159,6 +157,7 @@ section p {
   color:rgba(15, 15, 15, 1.00);
 }
 
+
 /*
     Form labels
 */
@@ -172,7 +171,7 @@ label {
     border-style: solid;
     border-width: 0 0 4px;
     border-color: #25a2d3;
-    font-size: 1.5rem;
+    
     color:rgb(27, 29, 28);
 }
 
@@ -185,11 +184,6 @@ label {
 /*
     Input fields
 */
-input, select, option, .checkbox-pseudo {
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
-}
 
 input:focus, select:focus {
     text-decoration: underline;
@@ -209,6 +203,11 @@ input {
     vertical-align: middle;
     max-width: 45%;
 }
+
+input, select, option, .checkbox-pseudo {
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    }
 
 button{
 
@@ -310,6 +309,32 @@ footer {
     body {
         width: 900px;
     }
+
+     #margin{
+
+      display: inline-flex; 
+       margin-left: 100px;
+    }
+    .radio-left{
+      margin-left:100px; 
+      border-style: none;
+    }
+
+    input, select, option, .checkbox-pseudo {
+    font-size: 1.5rem;
+   
+    }
+
+     label {
+      font-size: 1.5rem;
+    }
+
+    .callout{
+
+       font-size: 2.1rem;
+    }
+
+
 }
 
 @media (max-width: 740px) {
@@ -340,82 +365,35 @@ footer {
 
 
      }
-
-
+     #margin{
+        display: inline-flex; 
+        margin-left: 30px;
+    }
 
     header {
         padding: 0;
     }
-}
+    .radio-left{
+      margin-left:50px; 
+      border-style: none;
+    }
 
-/*
- button:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
-}
+    /*Select Product Category and Select Category*/
+    input, select, option, .checkbox-pseudo {
+    font-size: 1.2rem;
+    
+    }
 
-#testbutton {
+    label {
+      font-size: 1.2rem;
+    }
 
-  width: 300px;
-  height:50px;
-  border-radius:180px;
-  position:relative;
-  left:calc(50% - 75px);
-  top:calc(50% - 25px);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  cursor:pointer;
-  line-height:12px;
-  box-shadow:0px 0px 40px 20px  #060707;
-}
+    .callout{
 
-#testbutton:before {
-  content:url();
-  z-index:1;
-  position:absolute;
-  display:block;
-  width:80%;
-  height:70%;
-  top:15%;
-  left:10%;
-  transition: 0.3s opacity ease-in-out;
-  filter:blur(15px);
-  opacity:0;
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+       font-size: 1.8rem;
+    }
 
 }
-
-#testbutton:hover:before {
-  opacity:1;
-  transition: 0.3s opacity ease-in-out;
-  filter:blur(25px);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
-}
-
-#testbutton:after {
-  content: url(./../img/msantsi.png) "     " " SA IMPORT DUTIES";
-  text-align:center;
-  line-height:40px;
-  font-size:18px;
-  color:rgba(235,235,235,1);
-  font-weight:bold;
-  z-index:5;
-  position:absolute;
-  display:block;
-  border-radius:180px;
-  width:92%;
-  height:80%;
-  top:10%;
-  left:4%;  
-  background-color:rgb(19, 20, 22);
-
-}
-
-*/
 
 
 .box{

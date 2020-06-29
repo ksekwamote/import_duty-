@@ -1,12 +1,4 @@
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-      window.scrollTo(100,0);
-  } else {
-      window.scrollTo(50,0);
-  }
-}
 
- var x = window.matchMedia("(max-width: 700px)")
 
 $( document ).ready(function() {
 
@@ -21,7 +13,6 @@ function custom() {
 					var pcSelect = document.getElementById("category")
 					var product = pcSelect.options[pcSelect.selectedIndex].value
 					var price = document.getElementById("price").value
-          var x = window.matchMedia("(max-width: 700px)")
          
         
 
@@ -172,8 +163,7 @@ function custom() {
 
                  }
 
-
-              
+                 
             
 
 				}

@@ -173,7 +173,7 @@ function custom() {
                  }
 
 
-                window.scrollTo(0,100)
+              
             
 
 				}

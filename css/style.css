@@ -322,6 +322,7 @@ footer {
 
     input, select, option, .checkbox-pseudo {
     font-size: 1.5rem;
+
    
     }
 
@@ -389,8 +390,10 @@ footer {
     input, select, option, .checkbox-pseudo {
     font-size: 1.2rem;
     white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    overflow: hidden;
+      text-overflow: clip; 
+  
+ 
     
     }
 

@@ -17,9 +17,7 @@ a {
 =======
     color: rgba(255, 109, 109, 1.00);
 >>>>>>> de108477fa8b26856e1b2bf3ac6a179240d02268
-=======
-    color: rgba(255, 109, 109, 1.00);
->>>>>>> 6df604a7476434328ca5090988bcd06b4b6498af
+
     font-weight: bold;
     font-size: 18px;
 }
@@ -302,6 +300,8 @@ footer {
     font-size: 1rem;
 }
 
+
+
 /*
     Responsive Overrides
 */
@@ -333,6 +333,13 @@ footer {
 
        font-size: 2.1rem;
     }
+
+    #disclaimer{
+
+    font-size: 15px;
+
+
+}
 
 
 }
@@ -381,6 +388,9 @@ footer {
     /*Select Product Category and Select Category*/
     input, select, option, .checkbox-pseudo {
     font-size: 1.2rem;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
     
     }
 
@@ -392,6 +402,12 @@ footer {
 
        font-size: 1.8rem;
     }
+    #disclaimer{
+
+    font-size: 13px;
+
+
+}
 
 }
 

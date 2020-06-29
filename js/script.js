@@ -288,28 +288,21 @@ function custom() {
                   var total_cost = Number(price)+ Number(tax)+ Number(import_duty)
                   var total = total_cost.toFixed(2)
 
-                 if (tax > 500){
+                 if (tax > 0){
 
                      document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
                 <div class="callout" style="color:rgba(15, 15, 15, 1.00)">
-                    😢 Oh no, looks like you’ll have to pay <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>
-                    in taxes!
+                    15% tax on your product value: <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>!
+                    <br><br> `+100*duty.toFixed(2)+`% import duties on your product value: `+sign+`
+                    <strong class="result-duty">`+import_duty.toFixed(2)+`</strong>!
+                    <br><br> Total (excluding shipping): `+sign+`<strong class="result-total">`+total+`</strong>!
                 </div>
-
-                <div class="explanation">
-                    Additionally, you'll be charged a duty fee of `+sign+`
-                    <strong class="result-duty">`+import_duty.toFixed(2)+`</strong>"
-                </div>
-
-                <div class="details">
-                    Which brings your total to `+sign+`
-                    <strong class="result-duty">`+total+`</strong> 
-                </div>
-                <div class="details">NOTE: The country you've selected is part of the <strong>`+region+` </strong>Trade Agreement.</div>
+                
+                <div class="details">NOTE: The country you've selected is part of the <strong> SA - `+region+` </strong>Trade Agreement.</div>
             </div>`
                  }
 
-                 else if (tax <50){
+                 else if (tax <0){
 
                      document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
                 <div class="callout" style="color:rgba(15, 15, 15, 1.00)">

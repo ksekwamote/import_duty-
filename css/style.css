@@ -322,7 +322,7 @@ footer {
     }
 
     input, select, option, .checkbox-pseudo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
    
     }
@@ -389,7 +389,7 @@ footer {
 
     /*Select Product Category and Select Category*/
     input, select, option, .checkbox-pseudo {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     white-space: nowrap;
     overflow: hidden;
       text-overflow: clip; 
@@ -399,7 +399,7 @@ footer {
     }
 
     label {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     .callout{

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +13,9 @@
 
     <!-- I know icons. I have the best icons. -->
     <link rel = "icon" href =  
-"./img/msantsi.png" 
+"./img/favicon/south-africa.png" 
         type = "image/x-icon"> 
-
+<!--
     <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
@@ -28,9 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-
+-->
     <meta name="msapplication-TileColor" content="#61BBBB">
-    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/img/favicon/south-africa.png">
     <meta name="theme-color" content="#61BBBB">
     <!-- I miss favicon.ico... -->
 
@@ -38,9 +39,9 @@
 <body>
 
     <header>
-        <a href="https://duties.ch/">
+        <a href="./index.html">
             <h1>SA Duties</h1>
-            <div class="tagline">online import costs calculator</div>
+            <div class="tagline">South Africa import tax calculator</div>
         </a>
     </header>
 
@@ -54,13 +55,13 @@
             		
             		<label class="radio-right" style="border-style: none;" >
             		<input type="radio" value="ZAR" name="currency" checked/>
-            			&nbsp; &nbsp;<img id="icon" src="./img/south.png"> &nbsp; ZAR
+            			<!--&nbsp; &nbsp;<img id="icon" src="./img/south.png"> --> &nbsp; ZAR
             	</label>
 
 
             	<label class="radio-left" >
             		<input type="radio" value="USD" name="currency"/>
-            			&nbsp; &nbsp;<img id="icon" src="./img/usa-today.png"> &nbsp; USD
+            			<!--&nbsp; &nbsp;<img id="icon" src="./img/usa-today.png">--> &nbsp; USD
             	</label>
 
             	</div>
@@ -376,14 +377,14 @@
 
             <div class="positive" >
                 <div class="callout">
-                <p style="text-align:justify;"> 
+                <p> 
                     🥳 Hi there! Are you ready to calculate some import costs??
                 </p>
                 </div>
 
                 <div class="explanation">
                     Fill Out the details  <span class="result-taxrate"></span> and 
-                    <strong class="result-vat">PRESS</strong> the button below &#128071 &#128071
+                    <strong class="result-vat">PRESS</strong> the button below &#128513&#128071&#128071
                 </div>
             </div>
 
@@ -418,16 +419,11 @@
                 for more information.
             </p>
         </section>
+     
     </footer>
 
     <!-- lazily loaded -->
     <div data-if-fragment="tests" data-src="js/tests.js"></div>
-
-    <!-- JQUERY -->
-    <script
-			  src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
 
     <!-- eagerly loaded -->
     <script type="text/javascript" src="js/script.js"></script>
@@ -436,3 +432,5 @@
     <script type="text/javascript" src="js/ui.js"></script>
 </body>
 </html>
+
+   

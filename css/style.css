@@ -1,3 +1,4 @@
+
 /*
     General Styles
 */
@@ -375,7 +376,7 @@ footer {
      }
      #margin{
         display: inline-flex; 
-        margin-left: 30px;
+         align-content: center;
     }
 
     header {
@@ -492,3 +493,18 @@ footer {
     transform:translateY(0);
   }
 }
+
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+

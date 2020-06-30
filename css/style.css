@@ -346,6 +346,81 @@ footer {
 
 }
 
+
+@media (max-width: 340px) {
+
+
+    html {
+        padding: 0 1.5rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    body {
+        padding: 0;
+        width: 100%;
+    }
+
+    #variables {
+        margin: 0 0 1.5rem;
+        flex: 0 1 100%;
+        color:white;
+    }
+
+     #result{
+         margin: 0 0 1.5rem;
+        flex: 0 1 100%;
+        color:rgba(15,15,15,1.00);
+
+
+     }
+     #margin{
+        display: inline-flex; 
+         align-content: center;
+    }
+
+    header {
+        padding: 0;
+    }
+    .radio-left{
+      margin-left:50px; 
+      border-style: none;
+    }
+
+    /*Select Product Category and Select Category*/
+    input, select, option, .checkbox-pseudo {
+    font-size: 1.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+      text-overflow: clip; 
+  
+ 
+    
+    }
+
+    label {
+      font-size: 1.8rem;
+    }
+
+    .callout{
+
+       font-size: 1.5rem;
+    }
+    #disclaimer{
+
+    font-size: 10px;
+
+
+}
+
+
+
+
+}
+
+
 @media (max-width: 740px) {
 
     html {

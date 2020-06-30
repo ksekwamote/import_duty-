@@ -293,9 +293,9 @@ function custom() {
                      document.getElementById("res").innerHTML =`<div class="negative" style="color:rgba(15, 15, 15, 1.00)">
                 <div class="callout" style="color:rgba(15, 15, 15, 1.00)">
                     15% tax on your product value: <strong class="result-costs">`+sign+tax.toFixed(2)+`</strong>!
-                    <br><br> `+100*duty.toFixed(2)+`% import duties on your product value: `+sign+`
-                    <strong class="result-duty">`+import_duty.toFixed(2)+`</strong>!
-                    <br><br> Total (excluding shipping): `+sign+`<strong class="result-total">`+total+`</strong>!
+                    <br><br> `+100*duty.toFixed(2)+`% import duties on your product value:
+                    <strong class="result-duty">`+sign+import_duty.toFixed(2)+`</strong>!
+                    <br><br> Total (excluding shipping): <strong class="result-total">`+sign+total+`</strong>!
                 </div>
                 
                 <div class="details">NOTE: The country you've selected is in the <strong>`+region+` Trade Agreement</strong> with South Africa.</div>

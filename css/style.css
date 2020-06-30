@@ -21,6 +21,18 @@ a {
     font-weight: bold;
     font-size: 18px;
 }
+.header-img {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background: #555;
+  }
+  
+  .header h1 {
+    position: right;
+    top: 18px;
+    left: 10px;
+  }
 /*
     CALCULATE TEXT
 */
@@ -75,10 +87,10 @@ body {
     Header
 */
 header {
-    border-color: #25a2d38a;
+    border-color: #25a2d39f;
     border-style: solid;
-    border-radius: 3px;
-    border-width: 0 0 1.5rem;
+    border-radius: 1px;
+    border-width: 0 0 0.75rem;
 
     padding: 0 1.5rem 0 1.5rem;
 
@@ -167,7 +179,7 @@ label {
     margin: 0 0 1rem;
 
     border-style: solid;
-    border-width: 0 0 4px;
+    border-width: 0 0 3px;
     border-color: #25a2d3;
     
     color:rgb(27, 29, 28);

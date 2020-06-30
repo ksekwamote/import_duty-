@@ -298,7 +298,7 @@ function custom() {
                     <br><br> Total (excluding shipping): `+sign+`<strong class="result-total">`+total+`</strong>!
                 </div>
                 
-                <div class="details">NOTE: The country you've selected is part of the <strong> SA - `+region+` </strong>Trade Agreement.</div>
+                <div class="details">NOTE: The country you've selected is in the <strong>`+region+` Trade Agreement</strong> with South Africa.</div>
             </div>`
                  }
 

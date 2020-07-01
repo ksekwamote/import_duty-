@@ -153,4 +153,3 @@ ready(function() {
 /*
     Hookup the calcuation machinery
 */
-

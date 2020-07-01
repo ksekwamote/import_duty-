@@ -31,13 +31,7 @@ function parametersByForm(form) {
     var getPrice = function() {
         return parseFloatDefault(getValue('input[name="price"]'), 0.00);
     };
-
-    
-
-    var getFee = function() {
-        var country = getValue('select[name="country"]');
-
-    };
+  
 
     
 }

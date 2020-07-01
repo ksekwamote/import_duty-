@@ -9,7 +9,7 @@ function custom() {
 
                var currency=  document.querySelector('input[name="currency"]:checked').value;
                 
-                  console.log(typeof product )
+                  
                
                if((validate(price, product, country) == -1)){
 
